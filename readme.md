@@ -11,9 +11,7 @@ This website contains four pages:
 * Games
 
 ## Responsive design:
-This site was created with raw HTML, CSS.Page supports two diffirent devices resoliution platforms:
-* > 577px
-* < 576 px
+This site was created with raw HTML, CSS.Page supports two diffirent devices resoliution platforms (for laptop and mobile device);
 
 ## Reference:
 Website preview link :https://remygav.github.io/Friday-challenge-1/
