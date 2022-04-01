@@ -102,6 +102,14 @@ nav:hover .nav_elements a {
     color: #02577A;
 }
 
+.home-bg-img:hover {
+    border: 2px solid blue;
+    opacity: 0.5;
+}
+
+.home-quote:hover {
+    border: 2px solid blue;
+}
 .home-text {
     font-family: 'Montserrat';
     display: inline-block;
@@ -141,6 +149,9 @@ nav:hover .nav_elements a {
     width: 1342px;
     height: 432px;
     opacity: 0.3;
+}
+.home-bg-img2 {
+display: none;
 }
 
 .home-quote {
@@ -190,25 +201,40 @@ nav:hover .nav_elements a {
         height: 80px;
         left: 141px;
         top: 224px;
-    }
+               
+       }
 
     .home-bg-img {
+        display:none;
+    }
+
+    .home-bg-img2 {
+        display: block;
         position: absolute;
-        top: 317px;
+        top: 330px;
         left: 100px;
         width: 476px;
         height: 283px;
         opacity: 0.3;
     }
 
+    .home-bg-img2:hover {
+        border: 2px solid blue;
+        opacity: 0.5;
+    }
+    
+    .home-quote:hover {
+        border: 2px solid blue;
+    }
+
     .home-quote {
         width: 433px;
-        padding: 40px 10px;
+        padding: 60px 10px;
         transform: translateX(-35%);
     }
 
     footer {
-        transform: translateX(-160%);
+        transform: translateX(-140%);
     }
 
 
