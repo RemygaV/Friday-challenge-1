@@ -1,88 +1,215 @@
 nav {
-    position  : fixed;
-    width     : 100px;
-    height    : 100%;
+    position: fixed;
+    top: 0px;
+    width: 100px;
+    height: 906px;
     background: #F7F6FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
 }
 
 .img-logo {
-    margin   : 52px 0 24px;
-    position : relative;
-    left     : 50%;
+    margin: 52px 0 24px;
+    position: relative;
+    left: 50%;
     transform: translateX(-50%);
 }
 
 hr {
-    width           : 62px;
-    height          : 2px;
+    width: 62px;
+    height: 2px;
     background-color: #c4c4c4;
-    margin          : auto;
-    margin-bottom   : 32px;
+    margin: auto;
+    margin-bottom: 32px;
 }
 
 .nav_elements {
-    display      : flex;
+    display: flex;
     border-radius: 25px 0 0 25px;
-    padding      : 0;
-    align-items  : center;
-    margin-left  : 11px;
-    margin       : 34px 0 34px 11px;
-
+    padding: 0;
+    align-items: center;
+    margin-left: 11px;
+    margin: 34px 0 34px 11px;
 }
 
 .img {
-    position   : relative;
+    position: relative;
     margin-left: 37px;
 }
 
-.nav_elements p {
-    display    : none;
-    position   : relative;
-    font-size  : 16px;
-    margin-left: 32px;
+.nav_elements a {
+    display: none;
+    position: relative;
+    font-size: 16px;
+    margin-left: 40px;
+    color: #c4c4c4;
+}
+
+.nav_elements.active a {
+    margin-left: 38px;
+    color: #02577A;
 }
 
 .nav_elements.active {
-    padding         : 16px;
+    padding: 16px;
     background-color: white;
+}
+
+.nav_elements.active .img {
+    margin-left: 25px;
 }
 
 .nav_elements:last-child .img {
     left: -7.5px;
 }
 
-.nav_elements:last-child p {
-    margin-left: 15px;
+.nav_elements:last-child a {
+    margin-left: 20px;
 }
 
 footer {
-    position  : absolute;
-    bottom    : 0px;
-    width     : 346px;
-    left      : 50%;
+    position: absolute;
+    bottom: 0px;
+    width: 346px;
+    left: 45%;
     text-align: center;
-    font-size : 18px;
-    color     : #02577A;
+    font-size: 18px;
+    color: #02577A;
     border-top: 1.3px solid #02577A;
-    padding   : 11px 0;
+    padding: 11px 0;
 }
 
 nav:hover {
-    width     : 206px;
+    width: 206px;
     transition: 0.1s;
 }
 
 nav:hover hr {
-    width     : 128px;
+    width: 128px;
     transition: 0.1s;
 }
 
-nav:hover .nav_elements p {
+nav:hover .nav_elements a {
     display: inline;
 }
 
-.nav_elements p:hover {
+.nav_elements a:hover {
     text-decoration: underline;
-    color          : #02577A;
+    color: #02577A;
+}
+
+.home-text {
+    font-family: 'Montserrat';
+    display: inline-block;
+    position: absolute;
+    font-size: 56px;
+    width: 341px;
+    height: 80px;
+    top: 89px;
+    left: 206px;
+    line-height: 44px;
+}
+
+.home-date {
+    display: inline-block;
+    position: absolute;
+    width: 516px;
+    height: 147px;
+    background-color: #FFFFFF;
+
+    border-radius: 25px 25px 25px 25px;
+    top: 56px;
+    right: 67px;
+}
+
+.home-date-in-block {
+    position: relative;
+    width: 324px;
+    height: 103px;
+    margin: auto;
+    top: 22px;
+}
+
+.home-bg-img {
+    position: relative;
+    top: 226px;
+    left: 97px;
+    width: 1342px;
+    height: 432px;
+    opacity: 0.3;
+}
+
+.home-quote {
+    position: absolute;
+    margin: auto;
+    bottom: 78px;
+    left: 271px;
+    width: 898px;
+    padding: 60px;
+    font-size: 26px;
+    text-align: center;
+    border: 2px solid #02577A;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.home-hours {
+    color: #02577A;
+    font-size: 32px;
+    line-height: 44px
+}
+
+.home-day {
+    color: #0c0c0c;
+    font-size: 26px;
+    line-height: 44px
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        width: 576px;
+        height: 817px;
+    }
+
+    .home-date {
+        display: block;
+        position: absolute;
+        top: 44px;
+        left: 125px;
+        width: 419px;
+        height: 147px;
+    }
+
+    .home-text {
+        display: block;
+        position: absolute;
+        width: 285px;
+        height: 80px;
+        left: 141px;
+        top: 224px;
+    }
+
+    .home-bg-img {
+        position: absolute;
+        top: 317px;
+        left: 100px;
+        width: 476px;
+        height: 283px;
+        opacity: 0.3;
+    }
+
+    .home-quote {
+        width: 433px;
+        padding: 40px 10px;
+        transform: translateX(-35%);
+    }
+
+    footer {
+        transform: translateX(-160%);
+    }
+
+
 }
