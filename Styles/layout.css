@@ -2,7 +2,7 @@ nav {
     position: fixed;
     top: 0px;
     width: 100px;
-    height: 906px;
+    height: 100%;
     background: #F7F6FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 1;
@@ -10,6 +10,7 @@ nav {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .img-logo {
@@ -72,15 +73,20 @@ hr {
 }
 
 footer {
-    position: absolute;
-    bottom: 0px;
-    width: 346px;
-    left: 45%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    font-size: 18px;
     color: #02577A;
-    border-top: 1.3px solid #02577A;
-    padding: 11px 0;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 100px;
+}
+
+.footer_line {
+    width: 346px;
+    margin: 0.5rem auto;
+    border-bottom: 1px solid #02577a;
 }
 
 nav:hover {
@@ -102,18 +108,9 @@ nav:hover .nav_elements a {
     color: #02577A;
 }
 
-.home-bg-img:hover {
-    border: 2px solid blue;
-    opacity: 0.5;
-}
-
-.home-quote:hover {
-    border: 2px solid blue;
-}
 .home-text {
-    font-family: 'Montserrat';
     display: inline-block;
-    position: absolute;
+    position: relative;
     font-size: 56px;
     width: 341px;
     height: 80px;
@@ -121,63 +118,61 @@ nav:hover .nav_elements a {
     left: 206px;
     line-height: 44px;
 }
-
 .home-date {
-    display: inline-block;
-    position: absolute;
+    position: relative;
+    float: right;
     width: 516px;
     height: 147px;
-    background-color: #FFFFFF;
-
-    border-radius: 25px 25px 25px 25px;
-    top: 56px;
     right: 67px;
+    margin: 56px 0px;
+    background-color: #FFFFFF;
+    border-radius: 25px 25px 25px 25px;
 }
-
 .home-date-in-block {
-    position: relative;
+    padding: 22px 96px;
     width: 324px;
     height: 103px;
-    margin: auto;
-    top: 22px;
+  }
+.home-hours {
+    color: #02577A;
+    font-size: 28px;
+    line-height: 44px
+}
+.home-day {
+    color: #0c0c0c;
+    font-size: 24px;
+    line-height: 44px
 }
 
 .home-bg-img {
-    position: relative;
-    top: 226px;
-    left: 97px;
-    width: 1342px;
-    height: 432px;
-    opacity: 0.3;
-}
-.home-bg-img2 {
-display: none;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    margin: 20px 0 20px 0;
+    padding-left: 100px;
 }
 
 .home-quote {
-    position: absolute;
-    margin: auto;
-    bottom: 78px;
-    left: 271px;
-    width: 898px;
-    padding: 60px;
-    font-size: 26px;
+    display: flex;
     text-align: center;
+    justify-content: space-around;
+    padding: 0 0 20px 100px;
+}
+
+.quote {
+    width: 750px;
+    height: 121px;
     border: 2px solid #02577A;
-    border-radius: 25px 25px 25px 25px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 50px 0;
+    font-size: 16px;
 }
 
-.home-hours {
-    color: #02577A;
-    font-size: 32px;
-    line-height: 44px
-}
-
-.home-day {
-    color: #0c0c0c;
-    font-size: 26px;
-    line-height: 44px
-}
+/* .home-bg-img:hover {
+    border: 2px solid blue;
+    opacity: 0.8;
+} */
 
 @media screen and (max-width: 576px) {
     body {
@@ -201,31 +196,11 @@ display: none;
         height: 80px;
         left: 141px;
         top: 224px;
-               
-       }
-
-    .home-bg-img {
-        display:none;
     }
 
-    .home-bg-img2 {
-        display: block;
-        position: absolute;
-        top: 330px;
-        left: 100px;
-        width: 476px;
-        height: 283px;
-        opacity: 0.3;
-    }
-
-    .home-bg-img2:hover {
+    .home-bg-img:hover {
         border: 2px solid blue;
-        opacity: 0.5;
-    }
-    
-    .home-quote:hover {
-        border: 2px solid blue;
-    }
+         }
 
     .home-quote {
         width: 433px;
@@ -233,9 +208,9 @@ display: none;
         transform: translateX(-35%);
     }
 
-    footer {
+    /* footer {
         transform: translateX(-140%);
-    }
+    } */
 
 
 }
